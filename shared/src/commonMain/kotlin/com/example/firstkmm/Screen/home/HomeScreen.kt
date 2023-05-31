@@ -20,6 +20,7 @@ import com.example.firstkmm.data.models.Movie
 internal fun App(
     state: HomeState
 ) {
+   // val state = HomeViewModel().uiState.collectAsState().value
     LazyColumn {
        items(state.movies){
            PopularMovieItem(movie = it)
